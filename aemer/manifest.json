@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "AEM-er",
+  "description": "AEM-er",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "image/04.png",
+    "default_popup": "popup.html"
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "cookies",
+    "activeTab",
+    "storage",
+    "browsingData",
+    "https://www.google.com/"
+  ]
+}
