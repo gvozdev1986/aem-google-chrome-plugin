@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>-->
+
 </head>
     <body>
-    <label class="headerStyle">Options</label>
-    <br>
-    <br>
-    HOST:<br>
-    <label for="host"></label><input type="text" id="host">
-    <br>
-    PORT:<br>
-    <label for="port"></label><input type="text" id="port">
-    <br><br>
-    <a href="#" class="green" id="saveBtn">SAVE</a>
-    <Br>
-    <Br>
-    <label>Developer: Hvozdzeu Aliaksandr, 2019</label>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="color: white;">Settings</a>
+        </nav>
+        <br>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="host">Host</label>
+                    <input type="host" class="form-control form-control-sm" id="host" aria-describedby="hostHelp" placeholder="Host">
+                    <small id="hostHelp" class="form-text text-muted">Enter host in format http://localhost</small>
+                </div>
+                <div class="form-group">
+                    <label for="port">Port</label>
+                    <input type="port" class="form-control form-control-sm" id="port" aria-describedby="portHelp" placeholder="Port">
+                    <small id="portHelp" class="form-text text-muted">Enter port in format 80 or 4502 or 62033</small>
+                </div>
+            </form>
+            <div class="text-right">
+                <button type="button" class="btn btn-success pull-left" id="saveBtn">Save</button>
+            </div>
+        </div>
+    <div class="bottonbar">
+        <p class="navbar-brand" style="color: white;">Developer: Hvozdzeu Aliaksandr, 2019</p>
+    </div>
+    </body>
     <script src="js/options.js"></script>
     </body>
 </html>

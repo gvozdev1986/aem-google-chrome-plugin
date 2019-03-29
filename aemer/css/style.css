@@ -30,6 +30,10 @@
     margin-bottom: 7px;
 }
 
+.bg-light {
+    background-color: #28a745 !important;
+}
+
 a.green{
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
@@ -58,4 +62,38 @@ a.green {
 
 a.green:hover {
     background-color: rgb( 75, 183, 141 );
+}
+
+
+
+.bottonbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+/* Style the links inside the navigation bar */
+.bottonbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.bottonbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.bottonbar a.active {
+    background-color: #4CAF50;
+    color: white;
 }
