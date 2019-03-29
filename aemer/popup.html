@@ -13,6 +13,13 @@
     <img id="imageStatus" src="image/offline.png" alt="status">
     <label id="serverStatus"></label>
     <a href="#" class="settings" id="settingsBtn">Settings</a>
+    <div class="separator"></div>
+    <label id="base64">base64</label>
+    <textarea rows="10" cols="45" name="text" class="form1" id="form1" onchange="decode(this.value)"></textarea>
+    <label id="normal">normal</label>
+    <textarea rows="10" cols="45" name="text" class="form2" id="form2" onchange="encode(this.value)"></textarea>
+    <a href="#" class="green" id="openUrlCrx">CRX</a>
+    <a href="#" class="green" id="openUrlSite">Admin</a>
 </div>
 <script src="js/popup.js"></script>
 </body>
