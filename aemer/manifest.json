@@ -6,14 +6,19 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "image/04.png",
+    "default_icon": "image/aem.png",
     "default_popup": "popup.html"
   },
 
+  "icons": {
+    "16": "image/icons/16x16.png",
+    "32": "image/icons/32x32.png",
+    "48": "image/icons/48x48.png",
+    "128": "image/icons/128x128.png"
+  },
+
   "background": {
-    "scripts": [
-      "js/background.js"
-    ]
+    "page": "background.html"
   },
 
   "options_ui": {
@@ -27,6 +32,7 @@
     "activeTab",
     "storage",
     "browsingData",
-    "https://www.google.com/"
+    "https://www.google.com/",
+    "contextMenus"
   ]
 }

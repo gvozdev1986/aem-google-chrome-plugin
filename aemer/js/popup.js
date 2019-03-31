@@ -4,7 +4,7 @@ var settingsBtn = "options.html";
 var status = false;
 
 document.getElementById("damBtn").addEventListener("click", function () {
-        if (!status) {
+        if (status) {
             window.open(host + ":" + port + "/assets.html/content/dam", '_blank');
         }
     },
@@ -12,7 +12,7 @@ document.getElementById("damBtn").addEventListener("click", function () {
 
 
 document.getElementById("siteBtn").addEventListener("click", function () {
-        if (!status) {
+        if (status) {
             window.open(host + ":" + port + "/sites.html/content", '_blank');
         }
     },
@@ -20,7 +20,7 @@ document.getElementById("siteBtn").addEventListener("click", function () {
 
 
 document.getElementById("crxBtn").addEventListener("click", function () {
-        if (!status) {
+        if (status) {
             window.open(host + ":" + port + "/crx/de/index.jsp#/content/training/MySite", '_blank');
         }
     },
@@ -66,7 +66,7 @@ document.getElementById("form2").addEventListener("change", function () {
 
 
 document.getElementById("openUrlCrx").addEventListener("click", function () {
-        if (!status) {
+        if (status) {
             var form2 = document.getElementById('form2').value;
             if (form2 !== "") {
                 window.open(host + ":" + port + "/crx/de/index.jsp#" + form2, '_blank');
@@ -76,7 +76,7 @@ document.getElementById("openUrlCrx").addEventListener("click", function () {
     false);
 
 document.getElementById("openUrlSite").addEventListener("click", function () {
-        if (!status) {
+        if (status) {
             var form2 = document.getElementById('form2').value;
             //window.open(host + ":" + port + "/assets.html" + form2, '_blank');
             window.open(host + ":" + port + "/sites.html" + form2, '_blank');
